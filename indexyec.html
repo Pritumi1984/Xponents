@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin: 20px;
+        }
+        select {
+            margin: 5px;
+        }
+        progress {
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Academic Management System</h1>
+        <p id="degreeProgressStatusMessage"></p>
+
+    <label for="studentNameInput">Enter Your Name:</label>
+    <input type="text" id="studentNameInput" placeholder="Type your name">
+    <button id="fetchDataButton">Degree Status</button>
+    <hr>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Program of Study</th>
+                <th>Credits Completed</th>
+                <th>Campus</th>
+                <th>Faculty</th>
+                <th>Overall Progress</th>
+            </tr>
+            <tr>
+                <td id="studentName"></td>
+                <td id="programOfStudy"></td>
+                <td id="creditsCompleted"></td>
+                <td id="campus"></td>
+                <td id="faculty"></td>
+                <td>
+                    <progress id="overallProgress" value="0" max="100"></progress>
+                </td>
+            </tr>
+        </table>
+
+        <h2>General Education Requirements</h2>
+        <label for="genEdSelect">Select Requirement:</label>
+        <select id="genEdSelect">
+            <option value="humanities">Humanities</option>
+            <option value="socialScience">Social Science</option>
+            <option value="naturalScience">Natural Science</option>
+        </select>
+        <progress id="genEdProgress" value="0" max="100"></progress>
+        
+        <h2>Major Requirements</h2>
+        <label for="majorYearSelect">Select Year:</label>
+        <select id="majorYearSelect">
+            <option value="firstYear">First Year</option>
+            <option value="secondYear">Second Year</option>
+            <option value="thirdYear">Third Year</option>
+            <option value="fourthYear">Fourth Year</option>
+        </select>
+        <label for="majorCourseSelect">Select Course:</label>
+        <select id="majorCourseSelect">
+            <!-- Add major courses here -->
+        </select>
+        <button onclick="addCourse()">Add Course</button>
+        <progress id="majorProgress" value="0" max="100"></progress>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>

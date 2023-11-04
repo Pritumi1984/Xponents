@@ -1,0 +1,72 @@
+{
+    "student": [
+        {
+            "name": "Ondrea",
+            "programOfStudy": "Computer Science",
+            "creditsCompleted": 80,
+            "campus": "Keele",
+            "faculty": "Lassonde School of Engineering"
+        },
+        {
+            "name": "Pritumi",
+            "programOfStudy": "Computer Security",
+            "creditsCompleted": 75,
+            "campus": "Keele",
+            "faculty": "Lassonde School of Engineering"
+        },
+        {
+            "name": "Joanne",
+            "programOfStudy": "Computer Science",
+            "creditsCompleted": 90,
+            "campus": "Keele",
+            "faculty": "Lassonde School of Engineering"
+        }
+    ],
+    "progress": [
+        {
+            "name": "Ondrea",
+            "overallProgress": 0.7,
+            "genEdProgress": {
+                "humanities": 50,
+                "socialScience": 60,
+                "naturalScience": 70
+            },
+            "majorProgress": {
+                "firstYear": 40,
+                "secondYear": 60,
+                "thirdYear": 75,
+                "fourthYear": 85
+            }
+        },
+        {
+            "name": "Pritumi",
+            "overallProgress": 0.8,
+            "genEdProgress": {
+                "humanities": 60,
+                "socialScience": 70,
+                "naturalScience": 80
+            },
+            "majorProgress": {
+                "firstYear": 45,
+                "secondYear": 65,
+                "thirdYear": 80,
+                "fourthYear": 90
+            }
+        },
+        {
+            "name": "Joanne",
+            "overallProgress": 0.9,
+            "genEdProgress": {
+                "humanities": 60,
+                "socialScience": 90,
+                "naturalScience": 80
+            },
+            "majorProgress": {
+                "firstYear": 45,
+                "secondYear": 95,
+                "thirdYear": 70,
+                "fourthYear": 80
+            }
+        }
+    ]
+}
